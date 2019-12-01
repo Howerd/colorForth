@@ -1,0 +1,9 @@
+colorForth running under Bochs in Windows
+
+colorForth is a dialect of the Forth programming language, both of which languages were invented by Charles H. “Chuck” Moore - Forth around 1968, and colorForth in the late 1990’s.
+
+colorForth was released into the Public Domain by its author, Charles H. “Chuck” Moore, in 2001.
+
+colorForth uses numbered “blocks” to store and edit its source code, rather than files. Each block is 1024 bytes in size and is paired with “shadow block”, on even and odd numbered blocks respectively.
+The cf2019 system is created using the file cf2019.nasm assembled by the NASM Netwide ASSembler, together with colorForth blocks contained in the file cf2019Ref.img .
+The resulting image file cf2019.img can be run by copying it onto a USB drive (e.g.using Rufus), or in a virtual machine such as Bochs, by running the Windows batch file go.bat.
