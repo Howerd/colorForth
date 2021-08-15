@@ -1,4 +1,4 @@
-Real colorForth running slowly... 2019 Apr 04
+Real colorForth running slowly... 2021 Aug 15
 A tradeoff between working on (just about) any Windows PC against execution speed.
 
 Double left click ( run ) go.bat to start the cf2019.img version of colorForth ( in the folder one level up )
