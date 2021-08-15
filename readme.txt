@@ -1,4 +1,4 @@
-colorForth cf2019 2019 Sep 14
+colorForth cf2019 2021 Aug 15
 
 colorForth is a simple dialect of Forth created by the inventor of Forth, Chuck Moore.
 cf2019 is a distribution that runs on a Windows PC in bochs, or natively from a USB drive.
