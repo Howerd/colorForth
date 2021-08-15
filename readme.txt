@@ -1,4 +1,4 @@
-colorForth cf2019 2019 Sep 14 EuroForth "Taupe" edition ( see block 266 )
+colorForth cf2019 2019 Apr 04
 
 colorForth is a simple dialect of Forth created by the inventor of Forth, Chuck Moore.
 cf2019 is a distribution that runs on a Windows PC in bochs, or natively from a USB drive.
