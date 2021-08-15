@@ -1,4 +1,4 @@
-; cf2019.nasm 2019 Sep 14  "rachis-cascade" (512K byte image size) with arrow, Enter and Escape keys
+; cf2019.nasm 2019 Sep 14  "" (512K byte image size) with arrow, Enter and Escape keys
 ; colorForth for 80x86 PC for NASM , with 1024x768 and 800x600 graphics options
 ; Adapted by Howerd Oakford from code by :
 ; Chuck Moore : inventor, MASM
