@@ -1,5 +1,5 @@
-; cf2022.nasm 2022 Sep 23  MD5 59d1934258527b8465f4dbf327ddce81 "fancier-regards"
-; "chm" ( check MD5 )in colorForth shows "enra7r" and "eta9lc"
+; cf2022.nasm 2022 Sep 24  MD5 9fe7e198347e027576a65d1289f561a0 "sitar-flatfish"
+; "chm" ( check MD5 )in colorForth shows "W" and "$ef18ce" and "get,m"
 ; colorForth for 80x86 PC for NASM , with 1024x768 and 800x600 graphics options
 ; Adapted by Howerd Oakford from code by :
 ; Chuck Moore : inventor, MASM
@@ -1023,7 +1023,7 @@ bios_write:     ; ( a c -- a' c' )   \  write cylinder c from address a , leave 
 ; *****************************************************************************
 
 version:
-    db 'cf2022 1v0 2022Sep23 Chuck Moore' , 0x00    ; 0x20 + 1 bytes
+    db 'cf2022 1v0 2022Sep24 Chuck Moore' , 0x00    ; 0x20 + 1 bytes
     db ' Howerd Oakford inventio.co.uk' ,  0x00     ; 0x1E + 1 bytes, total 0x40
 
 nul:

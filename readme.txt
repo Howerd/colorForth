@@ -1,4 +1,4 @@
-colorForth cf2022 2022 Sep 23
+colorForth cf2022 2022 Sep 24
 
 colorForth is a simple dialect of Forth created by the inventor of Forth, Chuck Moore.
 cf2022 is a distribution that runs on a Windows PC in bochs, or natively from a USB drive.
