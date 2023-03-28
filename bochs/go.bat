@@ -1,1 +1,1 @@
-bochs.exe -q -f cf2019.bxrc
+bochs.exe -q -f cf2023.bxrc

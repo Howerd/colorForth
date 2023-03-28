@@ -7,7 +7,7 @@ romimage: file="./BIOS-bochs-latest"
 vgaromimage: file="./VGABIOS-lgpl-latest"
 boot: floppy
 floppy_bootsig_check: disabled=0
-floppya: type=1_44, 1_44="..\cf2019.img", status=inserted
+floppya: type=1_44, 1_44="..\cf2023.img", status=inserted
 # no floppyb
 ata0: enabled=1, ioaddr1=0x1f0, ioaddr2=0x3f0, irq=14
 ata1: enabled=1, ioaddr1=0x170, ioaddr2=0x370, irq=15
@@ -15,11 +15,9 @@ ata2: enabled=0
 ata3: enabled=0
 pci: enabled=1, chipset=i440fx
 vga: extension=vbe, update_freq=5
-cpu: count=1, ips=4000000, model=bx_generic, reset_on_triple_fault=1, cpuid_limit_winnt=0, ignore_bad_msrs=1, mwait_is_nop=0
-cpuid: family=6, model=0x03, stepping=3, mmx=1, apic=xapic, sse=sse2, sse4a=0, sep=1, aes=0, xsave=0, xsaveopt=0, movbe=0, adx=0, smep=0, x86_64=1, 1g_pages=0, pcid=0, fsgsbase=0, mwait=1
-cpuid: vendor_string="GenuineIntel"
-cpuid: brand_string="              Intel(R) Pentium(R) 4 CPU        "
-
+cpu: model=p4_willamette, count=1, ips=50000000, reset_on_triple_fault=1, ignore_bad_msrs=1, msrs="msrs.def", cpuid_limit_winnt=0
+cpuid: x86_64=1, mmx=1, sep=1, simd=sse4_2, apic=xapic, aes=1, movbe=1, xsave=1
+cpuid: family=6, model=0x1a, stepping=5
 print_timestamps: enabled=0
 port_e9_hack: enabled=0
 private_colormap: enabled=0
@@ -32,8 +30,7 @@ panic: action=ask
 error: action=report
 info: action=report
 debug: action=ignore
-keyboard: type=mf, serial_delay=250, paste_delay=100000, keymap=
-user_shortcut: keys=none
+keyboard: type=mf, serial_delay=250, paste_delay=100000, keymap=, user_shortcut=
 mouse: enabled=0, type=ps2, toggle=ctrl+mbutton
 parport1: enabled=1, file=""
 parport2: enabled=0
