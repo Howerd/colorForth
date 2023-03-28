@@ -1,17 +1,17 @@
-# Modified from https://github.com/narke - thanks!
+# Run cf2023 in Qemu, adapted from https://github.com/narke - thanks!
 
 all:
-	nasm -l cf2022.lst -o cf2022.img cf2022.nasm
+	nasm -l cf2023.lst -o cf2023.img cf2023.nasm
 
 ndisasm:
 	#echo "start address  avoid n bytes from address  filename     output filename"
-	ndisasm -b 32 -e 0x00000000   cf2022.img > cf2022.dasm
+	ndisasm -b 32 -e 0x00000000   cf2023.img > cf2023.dasm
 
 qemu:
-	qemu-system-i386 -drive format=raw,file=cf2022.img,if=floppy
+	qemu-system-i386 -drive format=raw,file=cf2023.img,if=floppy
 
 bochs:
-	bochs -f cf2022.bxrc
+	bochs -f cf2023.bxrc
 
 clean:
-	rm -f cf2022.lst cf2022.img cf2022.dasm
+	rm -f cf2023.lst cf2023.img cf2023.dasm

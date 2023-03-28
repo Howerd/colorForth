@@ -1,0 +1,3 @@
+qemu.exe index=0,media=disk,format=raw -hda .\cf2022.img -L Bios -m 32M -boot order=dc -rtc base=localtime,clock=host -parallel none -serial none -name cf2022 no-acpi -no-hpet -no-reboot -soundhw all
+REM -accel whpx -drive file=hda.img,index=0,media=disk,format=raw -hda ./cf2022.img -m 4G -L Bios -usbdevice mouse -usbdevice keyboard -boot menu=on -rtc base=localtime,clock=host 
+REM -parallel none -serial none -name cf2022 -no-acpi -no-hpet -no-reboot -soundhw all -L "qemu.exe"
